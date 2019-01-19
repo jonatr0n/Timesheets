@@ -8,3 +8,27 @@
     messagingSenderId: "731850213115"
   };
   firebase.initializeApp(config);
+
+  $("button").on("click", function (event) {
+    var empName = $("#name").val().trim();
+    var empRole = $("#role").val().trim();
+    var empRole = $("#date").val().trim();
+    var empMonthsWorked;
+    var empRate = $("#rate").val().trim();
+    var empTotalBill;
+  
+    console.log(empName);
+    var newTRow = $("<tr>").append(
+  
+      $("<td>").text(empName),
+      $("<td>").text(empRole),
+      $("<td>").text(empRole),
+      $("<td>").text(empMonthsWorked),
+      $("<td>").text(empRate),
+      $("<td>").text(empTotalBill),
+  
+    );
+  
+    $("#tbody").append(newTRow);
+  
+  });
