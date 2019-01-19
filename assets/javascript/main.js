@@ -10,6 +10,7 @@
 // firebase.initializeApp(config);
 
 $("button").on("click", function (event) {
+  event.preventDefault();
   var empName = $("#name").val().trim();
   var empRole = $("#role").val().trim();
   var empDate = $("#date").val().trim();
