@@ -41,7 +41,7 @@ header h4 {
 	margin-top: 1rem;
 }
 
-.form-bg, tbody {
+.form-bg, table {
 	background-color: rgba(0,0,0,.05);
 }
 
