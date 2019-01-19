@@ -52,3 +52,19 @@ button {
 tr: hover {
 	background-color: #878f99;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+footer span {
+  padding: 1rem;
+}
