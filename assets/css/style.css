@@ -41,6 +41,10 @@ header h4 {
 	margin-top: 1rem;
 }
 
+.form-bg, tbody {
+	background-color: rgba(0,0,0,.05);
+}
+
 button {
 	margin-right: 1rem;
 }
