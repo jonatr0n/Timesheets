@@ -1,9 +1,50 @@
+html, body {
+	height: 100%;
+}
+
 body {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;	
+}
+
+.bg {
+	background-image: url('../../assets/images/image.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 header {
-	height: 6rem;
+	height: 10rem;
 	color: #fff;
-	background: black
+	background-color: #6b5b95;
+	padding-top: 2rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header h4 {
+	padding-bottom: 2rem;
+}
+
+.card {
+	margin-top: 2rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header {
+	background-color: #a2b9bc;
+}
+
+.row {
+	margin-top: 1rem;
+}
+
+button {
+	margin-right: 1rem;
+}
+
+tr: hover {
+	background-color: #878f99;
 }
