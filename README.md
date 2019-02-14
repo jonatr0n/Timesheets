@@ -1,2 +1,2 @@
-# Timsheets
+# Timesheets
 Sheets of time
