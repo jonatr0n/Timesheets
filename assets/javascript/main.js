@@ -10,34 +10,38 @@ firebase.initializeApp(config);
 var database = firebase.database();
 // database.ref().on("value", function(snapshot) {
 
-
-
-$("button").on("click", function (event) {
+$("button").on("click", function(event) {
   event.preventDefault();
-  var empName = $("#name").val().trim();
-  var empRole = $("#role").val().trim();
-  var empDate = $("#date").val().trim();
+  var empName = $("#name")
+    .val()
+    .trim();
+  var empRole = $("#role")
+    .val()
+    .trim();
+  var empDate = $("#date")
+    .val()
+    .trim();
   var empMonthsWorked;
-  var empRate = $("#rate").val().trim();
+  var empRate = $("#rate")
+    .val()
+    .trim();
   var empTotalBill;
 
   console.log(empName);
   var newTRow = $("<tr>").append(
-
     $("<td>").text(empName),
     $("<td>").text(empRole),
     $("<td>").text(empDate),
     $("<td>").text(empMonthsWorked),
     $("<td>").text(empRate),
-    $("<td>").text(empTotalBill),
-
+    $("<td>").text(empTotalBill)
   );
 
   $("#tbody").append(newTRow);
-  $('#name').val('');
-  $('#role').val('');
-  $('#date').val('');
-  $('#rate').val('');
+  $("#name").val("");
+  $("#role").val("");
+  $("#date").val("");
+  $("#rate").val("");
 
   // store data in firebase
 
@@ -46,8 +50,7 @@ $("button").on("click", function (event) {
     empRole: empRole,
     empDate: empDate,
     empRate: empRate
-
-  })
+  });
   // Prettify the employee start
   var empStartPretty = moment.unix(empDate).format("MM/DD/YYYY");
   console.log(empStartPretty);
@@ -60,7 +63,6 @@ $("button").on("click", function (event) {
   // Calculate the total billed rate
   var empBilled = empMonths * empRate;
   console.log(empBilled);
-
 });
 
- // });
+// });
